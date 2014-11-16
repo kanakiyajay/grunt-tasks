@@ -1,10 +1,14 @@
 module.exports = function(grunt) {
   grunt.initConfig({
+    pkg: grunt.file.readJSON('package.json'),
     uglify: {
       first_target: {
+        options: {
+           banner: '/*! <%= pkg.name %> - v<%= pkg.version %> - ' +
+            '<%= grunt.template.today("yyyy-mm-dd") %> */'
+        },
         files: {
-          'dest/file1.min.js': ['src/jquery.js', 'src2/jquery.mobile.js'],
-          'dest/file2.min.js': ['src/jquery.js', 'src/angular.js']
+          'dest/script.<%= grunt.template.today("yymmddHHMM") %>.min.js': ['src/jquery.js', 'src2/jquery.mobile.js']
         }
       },
       second_target: {
