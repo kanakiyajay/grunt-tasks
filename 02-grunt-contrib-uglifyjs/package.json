@@ -1,12 +1,13 @@
 {
   "name": "grunt-contrib-uglifyjs",
   "version": "0.0.0",
-  "description": "A tutorial to use grunt-contrib-uglifyjs",
-  "main": "index.js",
+  "description": "A tutorial on how to use grunt-contrib-uglifyjs",
+  "keywords": "grunt, gruntjs",
+  "main": "Gruntfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Jay Kanakiya",
   "license": "ISC",
   "devDependencies": {
     "grunt": "^0.4.5",

@@ -113,8 +113,7 @@ The erb tags that you see refers to grunt template system, the grunt.template.to
 
 ## Dynamic filenames
 
-Most of the time there are more than 4 sub-projects and more than 40 javascript files in a project.
-Also what if you want to create a new min.js for every build containing its date for caching purposes ?
+Caching of files takes place depending upon the filename, so how do we create a new min.js for every build ?
 
 ```
   first_target: {
@@ -124,8 +123,25 @@ Also what if you want to create a new min.js for every build containing its date
   }
 ```
 
-/*! grunt-contrib-uglifyjs - v0.0.0 - 2014-11-16 */
-script.1411161327.min.js
+This will create a minified file with name script.1411161327.min.js with comment
+
+`/*! grunt-contrib-uglifyjs - v0.0.0 - 2014-11-16 */`
+
+## Pattern Matching for multiple files
+
+Most of the time there are more than 6 sub-projects and more than 60 javascript files in a project.
+How do map all of them using minimal grunt code ?
+
+```
+ first_target: {
+    files: [
+      { src: 'src/common/*js', dest: 'dest/common.js'}, // All the common files
+      { src: 'src/ui/*js', dest: 'dest/ui.js'}
+    ]
+  }
+```
+
+[More on globbing patterns](http://gruntjs.com/configuring-tasks#globbing-patterns)
 
 <div class="readme-wrapper">
   <p class="readme-button">
