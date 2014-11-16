@@ -1,9 +1,15 @@
 module.exports = function(grunt) {
   grunt.initConfig({
     uglify: {
-      my_target: {
+      first_target: {
         files: {
-          'dest/minified.js': ['src/jquery.js', 'src/angular.js']
+          'dest/file1.min.js': ['src/jquery.js', 'src2/jquery.mobile.js'],
+          'dest/file2.min.js': ['src/jquery.js', 'src/angular.js']
+        }
+      },
+      second_target: {
+        files: {
+          'dest2/jquery.all.min.js': ['src/jquery.js', 'src2/jquery.mobile.js', 'src2/jquery-ui.js']
         }
       }
     }

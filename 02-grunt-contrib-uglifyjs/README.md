@@ -2,8 +2,6 @@ Grunt contrib uglify is an official plugin in the grunt ecosystem to minify and 
 
 Here's the most simplest way on how to use it:
 
-Here's the simplest way to use it:
-
 From the command line:
 
 `npm install grunt grunt-contrib-uglifyjs --save-dev`
