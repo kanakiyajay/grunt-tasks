@@ -1,0 +1,16 @@
+{
+  "name": "03-grunt-contrib-watch",
+  "version": "0.0.0",
+  "description": "Simple way to use grunt watch",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-contrib-uglify": "^0.6.0"
+  }
+}

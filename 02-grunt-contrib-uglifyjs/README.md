@@ -142,13 +142,3 @@ How do map all of them using minimal grunt code ?
 ```
 
 [More on globbing patterns](http://gruntjs.com/configuring-tasks#globbing-patterns)
-
-<div class="readme-wrapper">
-  <p class="readme-button">
-    Readme
-  </p>
-
-  <div class="readme-toggle">
-    [readme owner="gruntjs" repo="grunt-contrib-uglify"]
-  </div>
-</div>
