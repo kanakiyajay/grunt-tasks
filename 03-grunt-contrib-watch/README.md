@@ -16,7 +16,7 @@ You can eliminate one step even further:
 
 This might seem like a small change in time, but overtime the difference this minor workflow change will cause is huge.
 
-## Sample Gruntfile.js
+## Step1: Sample Gruntfile.js
 
 Lets start with a sample Gruntfile.js :-
 
@@ -25,7 +25,7 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     watch: {
-      files: ["**/*"],
+      files: ["src/*.js"],
       tasks: ["uglify"]
     },
     uglify: {
@@ -55,3 +55,36 @@ Running "uglify:target" (uglify) task
 
 Done, without errors.
 Completed in 12.352s at Sat Nov 22 2014 10:39:12 GMT+0530 (India Standard Time) - Waiting...
+```
+
+## Step 2: Only watch certain files
+
+Ideally, we dont want this because it took 12 secs to run the command and it should only be run when the related javascript file changes.
+
+Just change the files that are being watched:
+```
+watch: {
+	src: {
+	   files: ["src/js/*.js"],
+	   tasks: ["uglify"]
+	}
+ }
+
+ // Also the file configuration
+ files: {
+   'dest/script.js': ['src/lib/jquery.js', 'src/lib/jquery.mobile.js', 'src/js/init.js']
+ }
+```
+This will make sure that when js files in src/js/* changes, run uglify task
+
+```
+$ grunt
+Running "watch" task
+Waiting...
+>> File "src\js\init.js" changed.
+Running "uglify:target" (uglify) task
+>> 1 file created.
+
+Done, without errors.
+Completed in 12.359s at Sat Nov 22 2014 10:53:34 GMT+0530 (India Standard Time) - Waiting...
+```

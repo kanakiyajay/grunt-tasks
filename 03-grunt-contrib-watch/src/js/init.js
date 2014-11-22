@@ -1,3 +1,3 @@
 $(document).ready(function () {
-	console.log("Jay Kanakiya");
+	console.log(" Jay Kanakiya ");
 });

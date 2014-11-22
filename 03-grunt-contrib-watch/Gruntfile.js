@@ -2,13 +2,13 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     watch: {
-      files: ["**/*"],
+      files: ["src/js/*.js"],
       tasks: ["uglify"]
     },
     uglify: {
       target: {
         files: {
-          'dest/script.js': ['src/jquery.js', 'src/jquery.mobile.js', 'src/init.js']
+          'dest/script.js': ['src/lib/jquery.js', 'src/lib/jquery.mobile.js', 'src/js/init.js']
         }
       }
     }
