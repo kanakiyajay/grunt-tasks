@@ -1,4 +1,4 @@
-# [Blog Post](http://grunt-tasks.com/grunt-contrib-watch/ "Grunt Watch")
+## [Blog Post](http://grunt-tasks.com/grunt-contrib-watch/ "Grunt Watch")
 
 grunt contrib watch is an amazing plugin that does one simple thing, run a grunt task whenever a file changes.
 This post should get you up and running with grunt-watch as fast as possible with some tips on how to leverage its full potential.
