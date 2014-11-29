@@ -71,4 +71,76 @@ This is the ".jscsrc" file for Airbnb style guide
 }
 ```
 
-## Getting Started
+## Getting Started. (Commit: 37e6a597c)
+
+Lets start by writing a sample jscs grunt task that should check Gruntfile.js for code covention errors according to the AirBnb javascript style guide. Save it as .jscsrc.
+Here's its grunt file:
+
+```
+module.exports = function(grunt) {
+  grunt.initConfig({
+      jscs: {
+        src: 'Gruntfile.js',
+        options: {
+          config: '.jscsrc'
+        }
+      }
+  });
+
+  grunt.loadNpmTasks('grunt-jscs');
+  grunt.registerTask('default', ['jscs']);
+};
+```
+
+On running grunt from cmd, you should get this error:
+
+```
+$ grunt
+Running "jscs:src" (jscs) task
+Invalid line break at Gruntfile.js :
+     1 |module.exports = function(grunt) {
+------------------------------------------^
+     2 |  grunt.initConfig({
+     3 |      jscs: {
+Missing line feed at file end at Gruntfile.js :
+    11 |  grunt.loadNpmTasks('grunt-jscs');
+    12 |  grunt.registerTask('default', ['jscs']);
+    13 |};
+--------^
+>> 2 code style errors found!
+Warning: Task "jscs:src" failed. Use --force to continue.
+
+Aborted due to warnings.
+```
+
+Both of them are related to line endings for windows line ending are "CRLF" for linux its "LF", this can be easily fixed in Sublime (or your text editor) by setting Settings -> Users -> as
+
+```
+"default_line_ending": "LF",
+"default_line_ending": "unix",
+```
+
+After running grunt you should now be able to successfully run grunt on it.
+If you want to check all the rules visit this [link](http://catatron.com/node-jscs/rules/ "jscs rules")
+
+## For multiple files
+
+```
+module.exports = function(grunt) {
+  grunt.initConfig({
+      jscs: {
+			main: "app.js",
+			controllers: {
+	        	src: ['Gruntfile.js', 'src/js/*.js'],
+	        	options: {
+	         	 config: '.jscsrc'
+	        	}
+			}
+			// You can add more configurations over here
+      }
+  });
+
+  grunt.loadNpmTasks('grunt-jscs');
+  grunt.registerTask('default', ['jscs']);
+};
+```
