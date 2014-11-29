@@ -1,0 +1,20 @@
+{
+  "name": "04-grunt-jscs",
+  "version": "0.0.0",
+  "description": "A tutorial on how to use grunt jscs",
+  "keywords": [
+    "grunt",
+    "grunt-jscs",
+    "jscs"
+  ],
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jay Kanakiya",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-jscs": "^1.0.0"
+  }
+}
