@@ -1,0 +1,21 @@
+{
+  "name": "07-grunt-concurrent",
+  "version": "0.0.0",
+  "description": "grunt concurrent to run tasks in parallel",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "grunt"
+  ],
+  "author": "Jay Kanakiya",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt-concurrent": "^1.0.0",
+    "grunt": "^0.4.5",
+    "grunt-contrib-copy": "^0.7.0",
+    "grunt-contrib-uglify": "^0.6.0"
+  },
+  "dependencies": {}
+}
