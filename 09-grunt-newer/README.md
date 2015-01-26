@@ -10,6 +10,7 @@ The best way to integrate grunt-newer in your build process is to add newer as t
 Lets create a simple Grunt file that will uglify js src files into minified files.
 
 Heres the folder file structure:
+```
 .
 ├── dist
 │   └── js
@@ -22,7 +23,7 @@ Heres the folder file structure:
         ├── app.js
         ├── jquery.js
         └── jquery.superscrollorama.js
-
+```
 Heres the Gruntfile.js:
 ```
 module.exports = function(grunt) {
