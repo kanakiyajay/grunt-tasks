@@ -1,0 +1,16 @@
+{
+  "name": "10-grunt-bump",
+  "version": "0.0.2",
+  "description": "Automatic incrementation of plugin versions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jay Kanakiya",
+  "keywords": "grunt, grunt-bump",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-bump": "^0.1.0"
+  }
+}
