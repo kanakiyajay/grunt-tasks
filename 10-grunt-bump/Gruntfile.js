@@ -4,9 +4,11 @@ module.exports = function(grunt) {
     bump: {
       options: {
         files: ['package.json'],
-        commit: false,
-        createTag: false,
-        push: false
+        commitFiles: ['package.json', 'Gruntfile.js', 'README.md'],
+        commitMessage: 'Release v%VERSION%',
+        createTag: true,
+        tagName: 'v%VERSION%',
+        tagMessage: 'The Release %VERSION%'
       }
     }
   });

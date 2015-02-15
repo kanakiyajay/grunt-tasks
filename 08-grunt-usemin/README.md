@@ -121,3 +121,6 @@ Grunt usemin first copies index.html to dist/, concat then copies as well as con
 dist/js and dist/css. Uglify and cssmin then minifies the javascript and css files.
 Filerev runs then runs the concatenated files through a file content has and gives a revision to each file.
 usemin is the final task that changes index.html to point to the rev version.
+
+Therefore you can grunt-usemin for your build process easily.
+Using the same above configuration you can add more html files and folders and make a complex build process easier to manage, change and use.

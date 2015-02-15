@@ -45,3 +45,9 @@ Running "bump" task
 
 Done, without errors.
 ```
+
+The `files` parameter in options object takes in an array of files where you want to update the versions.
+For example, component.json, bower.json or any application specific versioning files.
+
+## Git and grunt-bump
+

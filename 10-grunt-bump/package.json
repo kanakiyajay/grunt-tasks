@@ -1,6 +1,6 @@
 {
   "name": "10-grunt-bump",
-  "version": "0.0.2",
+  "version": "0.0.7",
   "description": "Automatic incrementation of plugin versions",
   "main": "index.js",
   "scripts": {
