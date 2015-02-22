@@ -75,3 +75,24 @@ module.exports = function(grunt) {
 ```
 
 After running grunt on the sample.css inside folder, its replaced by the vendor prefixed version.
+
+Another great grunt plugin that does the same thing is grunt-autoprefixer.
+Its easier to install
+`npm install grunt-autoprefixer autoprefixer-core --save-dev`
+
+According to this configuration:
+```js
+autoprefixer: {
+	options: {
+		browsers: ['last 2 versions', 'ie 8', 'ie 9', '> 1%']
+	},
+	main: {
+		expand: true,
+		flatten: true,
+		src: 'css/*.css',
+		dest: 'dist/'
+	}
+}
+```
+On running Grunt this time, it will scan css/sample.css and vendor prefixes to dist/sample.css.
+This is a much better option to keep your source files as clean as possible without browser prefixes or some weird browser behaviours.

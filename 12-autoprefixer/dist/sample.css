@@ -1,0 +1,24 @@
+:-webkit-full-screen a {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-transition: 1s all;
+	        transition: 1s all;
+}
+:-moz-full-screen a {
+	display: flex;
+	transition: 1s all;
+}
+:-ms-fullscreen a {
+	display: -ms-flexbox;
+	display: flex;
+	transition: 1s all;
+}
+:fullscreen a {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-transition: 1s all;
+	        transition: 1s all;
+}

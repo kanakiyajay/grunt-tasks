@@ -1,22 +1,20 @@
 module.exports = function(grunt) {
 
-  var autoprefixer = require('autoprefixer-core');
   require('load-grunt-tasks')(grunt);
 
   grunt.initConfig({
-      postcss: {
-        options: {
-          processors: [
-            autoprefixer({
-              browers: ['> 0.5%', 'last 2 versions', 'Firefox ESR', 'Opera 12.1']
-            }).postcss
-          ]
-        },
-        dist: {
-          src: 'css/*.css'
-        }
+    autoprefixer: {
+      options: {
+        browsers: ['last 2 versions', 'ie 8', 'ie 9', '> 1%']
+      },
+      main: {
+        expand: true,
+        flatten: true,
+        src: 'css/*.css',
+        dest: 'dist/'
       }
+    }
   });
 
-  grunt.registerTask('default', ['postcss']);
+  grunt.registerTask('default', ['autoprefixer']);
 };
