@@ -1,0 +1,4 @@
+:fullscreen a {
+	display: flex;
+	transition: 1s all;
+}
