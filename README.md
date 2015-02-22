@@ -7,6 +7,7 @@ Also makes development work easier by only maintaining the Readme at only one pl
 
 Following are the Blog posts pubished
 
+- [AutoPrefixer](http://grunt-tasks.com/12-autoprefixer/ "autoprefixer")
 - [load grunt tasks](http://grunt-tasks.com/load-grunt-tasks/)
 - [Grunt newer](http://grunt-tasks.com/grunt-newer/)
 - [Grunt usemin](http://grunt-tasks.com/grunt-usemin/)

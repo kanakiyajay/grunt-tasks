@@ -76,7 +76,7 @@ module.exports = function(grunt) {
 
 After running grunt on the sample.css inside folder, its replaced by the vendor prefixed version.
 
-Another great grunt plugin that does the same thing is grunt-autoprefixer.
+Another great grunt plugin that does the same thing is [grunt-autoprefixer](https://github.com/nDmitry/grunt-autoprefixer).
 Its easier to install
 `npm install grunt-autoprefixer autoprefixer-core --save-dev`
 
