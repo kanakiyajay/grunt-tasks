@@ -33,7 +33,7 @@ Lets say this is your folder-file structure:
 Where you have all your development files in your src/ folder and your minified/production files in dist/
 
 Add that as a task in your Gruntfile.js
-```
+```js
 responsive_images: {
  main: {
    options: {
@@ -62,3 +62,71 @@ After you run grunt it will resize the images and put them in img/
 │       ├── grunt-usemin-400.jpg
 │       └── grunt-usemin-800.jpg
 ```
+
+
+But this will only generate the images, not replace them in the src in your html.
+Ideally it should do both, replace all img tags with the picture polyfill as well as generate the new images.
+
+Thankfully, [Stephan Max](http://stephanmax.is/) has written another grunt plugin [grunt-responsive-images-extender](https://github.com/smaxtastic/grunt-responsive-images-extender) to complement grunt-responsive-image
+
+Similarly, install it and add it to devDependencies
+`npm install grunt-responsive-images-extender --save-dev`
+
+The default options for sizes in both the grunt plugins is
+```js
+	[{
+		name: 'small', width: 320
+	}, {
+		name: 'medium', width: 640
+	},{
+		name: 'large', width: 1024
+	}]
+```
+
+This is the grunt task used for responsive images extender:
+
+```js
+responsive_images_extender: {
+ main: {
+   options: {
+     sizes: [{
+       selector: 'img',
+       sizeList: [{
+           cond: 'min-width: 300px',
+           size: '50vw'
+         }, {
+           cond: 'min-width: 700px',
+           size: '70vw'
+         }, {
+           cond: 'default',
+           size: '100vw'
+       }]
+     }]
+   },
+   files: [{
+     expand: true,
+     src: ['**/*.{html,htm,php}'],
+     cwd: 'src/',
+     dest: 'dist/'
+   }]
+ }
+}
+```
+
+On running the above `grunt`, it will find all the images as specified in `selector` property and add the corresponding attributes as specified in `sizes`.
+In this case I am using the default grunt-responsive-image property of producing three images with suffix large, medium and small.
+
+
+Source: src/index.html
+```html
+<img src="img/grunt-usemin.jpg" alt="a cute kitten">
+```
+
+Production: dist/index.html
+```html
+ <img src="img/grunt-usemin.jpg" alt="a cute kitten" srcset="img/grunt-usemin-small.jpg 320w, img/grunt-usemin-medium.jpg 640w, img/grunt-usemin-large.jpg 1024w" sizes="(min-width: 300px) 50vw, (min-width: 700px) 70vw, 100vw">
+```
+
+Read more about srcset and sizes [here](http://martinwolf.org/2014/05/07/the-new-srcset-and-sizes-explained/ "srcset")
+
+Make sure to also add picturefill.js to the head for older browsers.
