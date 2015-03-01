@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Using Grunt Responsive Images</title>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+</head>
+<body>
+	<picture>
+        <source media="(min-width: 650px)" srcset="img/grunt-usemin-400.jpg">
+        <source media="(min-width: 465px)" srcset="img/grunt-usemin-800.jpg">
+        <!-- img tag for browsers that do not support picture element -->
+        <img src="img/grunt-usemin.jpg" alt="a cute kitten">
+      </picture>
+</body>
+</html>
