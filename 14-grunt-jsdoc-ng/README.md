@@ -41,67 +41,121 @@ Here's the corresponding section in Gruntfile.js
 Here's the source code for area.js:
 
 ```js
-(function () {
-  "use strict";
+"use strict";
+/**
+ * Creates a new geometrical Area Block
+ * @param {int} width  the width of the area
+ * @param {int} height the height of the area
+ */
+function Area(width, height) {
+  this.width = width;
+  this.height = height;
+
   /**
-   * Creates a new geometrical Area Block
-   * @param {int} width  the width of the area
-   * @param {int} height the height of the area
+   * Returns the width of the area
+   * @return {int}      the width of the area
    */
-  function Area(width, height) {
-    this.width = width;
-    this.height = height;
+  this.getWidth = function() {
+    return this.width;
+  };
 
-    /**
-     * Returns the width of the area
-     * @return {int}      the width of the area
-     */
-    this.getWidth = function() {
-      return this.width;
-    };
+  /**
+   * Returns the height of the area
+   * @return {int}      the height of the area
+   */
+  this.getHeight = function() {
+    return this.height;
+  };
 
-    /**
-     * Returns the height of the area
-     * @return {int}      the height of the area
-     */
-    this.getHeight = function() {
-      return this.height;
-    };
+  /**
+   * Returns the 2D area of the object
+   * @return {int} height x width
+   */
+  this.getTotalArea = function() {
+    return this.height * this.width;
+  };
 
-    /**
-     * Returns the 2D area of the object
-     * @return {int} height x width
-     */
-    this.getTotalArea = function() {
-      return this.height * this.width;
-    };
+  /**
+   * Returns whether height or width is greater
+   * @return {string}
+   */
+  this.getGreater = function() {
+    var greater = this.height > this.width ? "height" : "width";
+    return greater;
+  };
 
-    /**
-     * Returns whether height or width is greater
-     * @return {string}
-     */
-    this.getGreater = function() {
-      var greater = this.height > this.width ? "height" : "width";
-      return greater;
-    };
+  /**
+   * Changes the Height of the area
+   * @param {int} ht new height
+   */
+  this.setHeight = function(ht) {
+    this.height = ht;
+    return ht;
+  };
 
-    /**
-     * Changes the Height of the area
-     * @param {int} ht new height
-     */
-    this.setHeight = function(ht) {
-      this.height = ht;
-      return ht;
-    };
-
-    /**
-     * Changes the Width of the area
-     * @param {int} wd new width
-     */
-    this.setWidth = function(wd) {
-      this.width = wd;
-      return wd;
-    };
-  }
-})();
+  /**
+   * Changes the Width of the area
+   * @param {int} wd new width
+   */
+  this.setWidth = function(wd) {
+    this.width = wd;
+    return wd;
+  };
+}
 ```
+
+On running grunt from the command line
+
+```
+$ grunt
+Invoking JsDoc
+Parsing H:\grunt-tasks.com\github\14-grunt-jsdoc-ng\src\area.js ...>> complete.
+Generating output files...
+>> Output minification enabled
+>> Minifying JavaScript output
+Writing output files...>> complete.
+>> Finished running in 1.21 seconds.
+
+JsDoc completed
+```
+It will automatically create the documentation from our comments in area.js, format it and output a beautiful html file containing the docs. It will parse our READMEmd file and generate its documentation.
+
+> In this app, because I am fetching the README.md and posting it on this blog post, the jsdoc documentation generated will also contain the blog post.
+
+This the final tree structure of our app:
+
+```
+.
+├── docs
+│   ├── fonts
+│   │   ├── fonts.min.css
+│   │   ├── LICENSE.txt
+│   │   ├── Ubuntu-Bold.ttf
+│   │   ├── Ubuntu-BoldItalic.ttf
+│   │   ├── Ubuntu-Italic.ttf
+│   │   ├── Ubuntu-Light.ttf
+│   │   ├── Ubuntu-LightItalic.ttf
+│   │   ├── Ubuntu-Medium.ttf
+│   │   ├── Ubuntu-MediumItalic.ttf
+│   │   ├── UbuntuMono-Bold.ttf
+│   │   ├── UbuntuMono-BoldItalic.ttf
+│   │   ├── UbuntuMono-Italic.ttf
+│   │   ├── UbuntuMono-Regular.ttf
+│   │   └── Ubuntu-Regular.ttf
+│   ├── index.html
+│   ├── jsdoc-ng.data.js
+│   ├── jsdoc-ng.min.css
+│   ├── jsdoc-ng.min.js
+│   └── libs
+│       ├── angular.min.js
+│       ├── angular.min.js.map
+│       ├── highlight.min.css
+│       └── highlight.min.js
+├── Gruntfile.js
+├── package.json
+├── README.md
+└── src
+    └── area.js
+```
+
+You can find all the other options for grunt-jsdoc-ng below.
