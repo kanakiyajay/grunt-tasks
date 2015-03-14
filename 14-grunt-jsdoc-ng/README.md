@@ -39,6 +39,7 @@ Here's the corresponding section in Gruntfile.js
 ```
 
 Here's the source code for area.js:
+and here's the [link](https://rawgit.com/kanakiyajay/grunt-tasks/master/14-grunt-jsdoc-ng/docs/index.html#!/Area) to what the generated documentation looks like.
 
 ```js
 "use strict";
@@ -157,5 +158,9 @@ This the final tree structure of our app:
 └── src
     └── area.js
 ```
+
+Here'a [link](https://rawgit.com/kanakiyajay/grunt-tasks/master/14-grunt-jsdoc-ng/docs/index.html#!/Area) to the documentation generated and the screenshot is below
+
+![grunt-jsdoc-ng](http://i.imgur.com/FoXba8Z.jpg)
 
 You can find all the other options for grunt-jsdoc-ng below.
