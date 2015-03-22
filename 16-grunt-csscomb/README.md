@@ -65,11 +65,13 @@ Here's is the config file I use:
     "tab-size": true,
     "unitless-zero": true,
     "vendor-prefix-align": true,
-    "sort-order": "Visit this [link](http://github.com/kanakiyjay/grunt-tasks.com/16-grunt-csscomb/.csscomb.json)"
+    "sort-order": "..."
 }
 ```
 
-There's is an awesome builder for this available [online ](http://csscomb.com/config "csscomb config")
+Visit this [link](https://github.com/kanakiyajay/grunt-tasks/blob/master/16-grunt-csscomb/.csscomb.json)
+
+There's is an awesome builder for this available [online](http://csscomb.com/config "csscomb config")
 
 Below is the css properties before applying codepen:
 
