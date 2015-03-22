@@ -1,0 +1,54 @@
+body {
+    font-family : 'Verdana', sans-serif, Arial;
+    max-width : 960px;
+    margin : 0 auto;
+}
+
+h1 {
+    margin-top : 2em;
+    margin-bottom : 2em;
+    text-align : center;
+}
+
+.para {
+    font-size : 1.1em;
+    margin-bottom : 10px;
+}
+
+blockquote {
+    font-family : 1.3em;
+    margin : 10px;
+    padding : 10px;
+    padding-left : 20px;
+    background-color : #ccc;
+}
+
+#submit {
+    font-size : 1.1em;
+    margin : 0;
+    padding : 10px;
+    cursor : pointer;
+    color : darkgray;
+    border : 0;
+}
+
+#list {
+    list-style-type : none;
+}
+
+label {
+    padding-left : 10px;
+}
+
+#list li {
+    font-size : 1.1em;
+    margin : 5px;
+    padding-left : 10px;
+    border-left : 1px solid gray;
+}
+
+#txt,
+#txta {
+    font-size : 1.1em;
+    margin : 10px;
+}

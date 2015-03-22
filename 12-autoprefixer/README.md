@@ -1,4 +1,4 @@
-## [Blog post](http://grunt-tasks.com/12-autoprefixer/ "autoprefixer")
+## [Blog post](http://grunt-tasks.com/autoprefixer/ "autoprefixer")
 
 Grunt AutoPrefixer is a grunt plugin that parses all your css files in your web app and adds vendor specifix prefixes like -webkit- or -moz depending upon [Can I Use](http://caniuse.com/).
 Its extremely easy to setup and requires little configuration and is recommended by Google and is actively used by Twitter.

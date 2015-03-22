@@ -7,6 +7,9 @@ Also makes development work easier by only maintaining the Readme at only one pl
 
 Following are the Blog posts pubished
 
+- [Grunt csscomb](http://grunt-tasks.com/grunt-csscomb/ "grunt beautiful css")
+- [Grunt jsdoc](http://grunt-tasks.com/grunt-jsdoc-ng/ "Grunt Document generator")
+- [Grunt Responsive Images](http://grunt-tasks.com/responsive-images/ "grunt responsive images")
 - [AutoPrefixer](http://grunt-tasks.com/12-autoprefixer/ "autoprefixer")
 - [load grunt tasks](http://grunt-tasks.com/load-grunt-tasks/)
 - [Grunt newer](http://grunt-tasks.com/grunt-newer/)

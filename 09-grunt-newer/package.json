@@ -3,6 +3,10 @@
   "version": "0.0.1",
   "description": "Run grunt tasks on new files",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kanakiyajay/grunt-tasks.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

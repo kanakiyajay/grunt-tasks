@@ -1,0 +1,53 @@
+body {
+	max-width: 960px;
+	margin: 0 auto;
+	font-family: "Verdana", sans-serif, Arial;
+}
+
+h1 {
+	margin-bottom: 2em;
+	margin-top: 2em;
+	text-align: center;
+}
+
+.para {
+	margin-bottom: 10px;
+	font-size: 1.1em;
+}
+
+blockquote {
+	font-family: 1.3em;
+	padding: 10px;
+	margin: 10px;
+	background-color: #ccc;
+	padding-left: 20px;
+}
+
+#submit {
+	cursor: pointer;
+	padding: 10px;
+	border: 0;
+	margin: 0;
+	font-size: 1.1em;
+	color: darkgray;
+}
+
+#list {
+	list-style-type: none;
+}
+
+label {
+	padding-left: 10px;
+}
+
+#list li {
+	margin: 5px;
+	font-size: 1.1em;
+	padding-left: 10px;
+	border-left: 1px solid gray;
+}
+
+#txt, #txta {
+	margin: 10px;
+	font-size: 1.1em;
+}

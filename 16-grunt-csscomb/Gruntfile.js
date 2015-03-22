@@ -3,19 +3,16 @@ module.exports = function(grunt) {
   require('load-grunt-tasks')(grunt);
 
   grunt.initConfig({
-    removelogging: {
+    csscomb: {
       dist: {
-        files: [{
-          expand: true,
-          src: ['*.js'],
-          cwd: 'js/',
-          dest: 'dist/js/'
-        }]
+        files: {
+          'css/style.comb.css': ['css/style.css']
+        }
       }
     }
   });
 
   grunt.registerTask('default', [
-      'removelogging'
+    'csscomb'
   ]);
 };
