@@ -14,7 +14,7 @@ There is a great [post](http://www.smashingmagazine.com/2012/10/02/csscomb-tool-
 ## Getting Started
 
 Depending upon your use case, To install this in your project, run
-`npm install grunt-css-comb --save-dev`
+`npm install grunt-csscomb --save-dev`
 
 We are going to consider a very basic html file and its css file.
 Heres the [codepen](http://codepen.io/kanakiyajay/pen/gbZZbb) for the demo index.html
@@ -69,7 +69,7 @@ Here's is the config file I use:
 }
 ```
 
-Visit this [link](https://github.com/kanakiyajay/grunt-tasks/blob/master/16-grunt-csscomb/.csscomb.json)
+You will find the whole csscomb.json file [here](https://github.com/kanakiyajay/grunt-tasks/blob/master/16-grunt-csscomb/.csscomb.json)
 
 There's is an awesome builder for this available [online](http://csscomb.com/config "csscomb config")
 
