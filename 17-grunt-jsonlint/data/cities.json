@@ -1,0 +1,26 @@
+{
+    "london": {
+        "lat": 51.5,
+        "lon": -0.117,
+        "wikipedia": "London",
+        "city": "London"
+    },
+    "melbourne": {
+        "lat": -37.8,
+        "lon": 144.95,
+        "wikipedia": "Melbourne",
+        "city": "Melbourne"
+    },
+    "sanfrancisco": {
+        "lat": 37.767,
+        "lon": -122.417,
+        "wikipedia": "San_Francisco",
+        "city": "San Francisco"
+    },
+    "tokyo": {
+        "lat": 35.683,
+        "lon": 139.767,
+        "wikipedia": "Tokyo",
+        "city": "Tokyo"
+    }
+}
