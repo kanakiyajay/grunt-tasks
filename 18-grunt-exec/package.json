@@ -1,0 +1,20 @@
+{
+  "name": "18-grunt-exec",
+  "version": "0.0.1",
+  "description": "Grunt plugin to easily execute cmd shell commands via an easy to use api",
+  "main": "Gruntfile.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kanakiyajay/grunt-tasks.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "load-grunt-tasks": "^3.1.0",
+    "grunt-exec": "^0.4.6"
+  }
+}
