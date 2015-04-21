@@ -4,11 +4,16 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
     exec: {
-    	sayHello: {
-    		cmd: 'echo hello'
-    	}
+    	removeLogs: {
+    		cmd: 'rm *.log',
+            stderr: false
+    	},
+        removeTmp: {
+            cmd: 'rm -rf .tmp',
+            stderr: false
+        }
     }
   });
 
-  grunt.registerTask('default', ['exec:sayHello']);
+  grunt.registerTask('default', ['exec:removeLogs', 'exec:removeTmp']);
 };
