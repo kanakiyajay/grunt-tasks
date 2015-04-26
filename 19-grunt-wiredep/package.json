@@ -1,0 +1,20 @@
+{
+  "name": "19-grunt-wiredep",
+  "version": "0.0.1",
+  "description": "Grunt plugin to inject links hrefs and script srcs in your html via bower install",
+  "main": "Gruntfile.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kanakiyajay/grunt-tasks.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-wiredep": "^2.0.0",
+    "load-grunt-tasks": "^3.1.0"
+  }
+}
