@@ -216,6 +216,7 @@ removeLoggingCalls: {
 ```
 
 This would make sure that if you have window.DEBUG = true, all the console.logs will be printed in production as well.
+As usual this blog post as well as this code is available on [github](https://github.com/kanakiyajay/grunt-tasks/tree/master/15-grunt-remove-logging-calls).
 
 
 

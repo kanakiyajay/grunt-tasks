@@ -88,3 +88,54 @@ Now after running grunt wiredep, the bootstrap components will appear in your in
 </body>
 </html>
 ```
+
+## Automating
+
+Grunt is all about automating, its become redundant to run two commands of bower install and grunt wiredep everytime we want to install any dependency.
+The solution is to use [grunt-watch](http://grunt-tasks.com/grunt-contrib-watch/) to moniter changes over bower_components and run grunt-wiredep everytime something changes.
+
+You will first need to install grunt-watch
+`npm install grunt-contrib-watch --save-dev`
+
+And Change your Gruntfile.js to include the watch task:
+```js
+watch: {
+  files: ['bower_components/*'],
+  tasks: ['wiredep']
+}
+
+grunt.registerTask('changes', ['watch']);
+```
+
+The above 'watch' task will moniter for any changes in bower_components folder and will run the grunt tasks specified in the 'tasks' option.
+
+```
+$ grunt changes
+Running "watch" task
+Waiting...
+```
+
+Now open the same project folder in another tab in your terminal and install angular-js
+`bower install angular --save`
+
+Now go back to the original tab which is running the grunt watch task. You will observe the following output:
+
+```
+>> File "bower_components\angular" added.
+Running "wiredep:task" (wiredep) task
+
+Done, without errors.
+```
+
+Our grunt-wiredep task has run after angular folder in bower_components has been created and if you looked at your index.html:
+
+```html
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+```
+
+The angular depedency was automatically included.
+
+Found something wrong in the above article, send a pull request in the [github repo](http://github.com/kanakiyajay/grunt-tasks/19-grunt-wiredep/) or notify in the comments below.
+I will also love to hear about your cool hacks around grunt-wiredep.

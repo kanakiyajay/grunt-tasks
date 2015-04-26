@@ -7,8 +7,13 @@ module.exports = function(grunt) {
       task: {
         src: ['index.html']
       }
+    },
+    watch: {
+      files: ['bower_components/*'],
+      tasks: ['wiredep']
     }
   });
 
   grunt.registerTask('default', ['wiredep']);
+  grunt.registerTask('changes', ['watch']);
 };

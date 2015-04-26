@@ -14,7 +14,7 @@ This will add it in node_modules and the flag --save-dev will also add it in dev
 Usemin exports two tasks, viz. usemin and useminPrepare as well as other grunt plugins like [concat](http://grunt-tasks.com/grunt-contrib-copy/), [uglify](http://grunt-tasks.com/grunt-contrib-uglify/), cssmin, filerev
 
 You will also have to install them manually.
-`npm install grunt-contrib-copy grunt-contrib-uglify grunt-contrib-copy grunt-contrib-cssmin grunt-filerev --save-dev`
+`npm install grunt-contrib-copy grunt-contrib-uglify grunt-contrib-cssmin grunt-filerev --save-dev`
 
 We will also require [grunt-contrib-copy](http://grunt-tasks.com/grunt-contrib-copy/) for copying the index.html to the
 
@@ -124,3 +124,7 @@ usemin is the final task that changes index.html to point to the rev version.
 
 Therefore you can grunt-usemin for your build process easily.
 Using the same above configuration you can add more html files and folders and make a complex build process easier to manage, change and use.
+
+Futher: [How to use grunt-usemin with grunt-remove-logging](http://grunt-tasks.com/grunt-remove-logging/)
+
+Above post will explain how you can still keep those pesky yet required console.log statements in your development folder and remove them in your production files.

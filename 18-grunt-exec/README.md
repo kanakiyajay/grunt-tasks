@@ -108,5 +108,4 @@ See how easy it is
 Every project might have some manual steps, if they can be executed from the shell, you should consider shifting them to grunt-exec.
 It might save you a good deal of time by automating those small yet important tasks.
 
-
 I will love to hear about your cool hacks around grunt-exec in the comments below
