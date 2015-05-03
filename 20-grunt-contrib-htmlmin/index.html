@@ -3,12 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<title>How to use Grunt Htmlmin</title>
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
-	<style>
-		.m-t {
-			margin-top: 20px;
-		}
-	</style>
+	<!-- build:css css/minified.css -->
+	<link rel="stylesheet" href="css/bootstrap.css" />
+	<link rel="stylesheet" href="css/codemirror.css" />
+	<link rel="stylesheet" href="css/custom.css" />
+	<!-- endbuild -->
 </head>
 <body>
 	<!--
@@ -40,5 +39,10 @@
 			</div>
 		</div>
 	</div>
+	<!-- build:js js/minified.js -->
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/angular.min.js"></script>
+	<!-- endbuild -->
 </body>
 </html>

@@ -15,8 +15,13 @@ This is the place where your script tags will be inserted
 ## Using Bower
 
 You will have to make sure you have bower installed on your machine before starting.
-If not, it can be installed using `npm install -g bower`
-Then run `bower init`
+If not, it can be installed using:
+
+`npm install -g bower`
+
+Initiate bower by running:
+
+`bower init`
 
 Follow the command line tutorial and it will generate your bower.json for your project.
 

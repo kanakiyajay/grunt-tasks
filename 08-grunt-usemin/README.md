@@ -128,3 +128,7 @@ Using the same above configuration you can add more html files and folders and m
 Futher: [How to use grunt-usemin with grunt-remove-logging](http://grunt-tasks.com/grunt-remove-logging/)
 
 Above post will explain how you can still keep those pesky yet required console.log statements in your development folder and remove them in your production files.
+
+Further 2: [How to use grunt-usmin with grunt-htmlmin](http://grunt-tasks.com/grunt-htmlmin/)
+
+Above post explains the steps to minify html, css and js files using the above plugins.

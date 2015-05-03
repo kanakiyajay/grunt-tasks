@@ -17,8 +17,10 @@ cd to that folder and run
 
 `npm install`
 
-Following are the Blog posts that have been pubished
+Following are the Blog posts that have been published
 
+- [Grunt Contrib Htmlmin](http://grunt-tasks.com/grunt-htmlmin/ "grunt contrib htmlmin")
+- [Grunt Wiredep](http://grunt-tasks.com/grunt-wiredep/ "grunt wiredep")
 - [Grunt Jsonlint](http://grunt-tasks.com/grunt-jsonlint/ "grunt jsonlint")
 - [Grunt Remove logging calls](http://grunt-tasks.com/grunt-remove-logging-calls/ "grunt remove logging")
 - [Grunt csscomb](http://grunt-tasks.com/grunt-csscomb/ "grunt beautiful css")
