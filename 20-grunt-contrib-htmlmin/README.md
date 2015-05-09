@@ -44,6 +44,7 @@ Savings: 0.57 Kb = 28.5% compression
 ## Using it with grunt usemin
 
 We have earlier covered [grunt-usemin](http://grunt-tasks.com/grunt-usemin/) which concatenates your css and js files based on comments in your html files.
+Note that grunt-contrib-htmlmin uses [html-minifier](http://github.com/kangax/html-minifier) in the background for compressing your html files.
 
 You will also need to install the following grunt plugins:
 
