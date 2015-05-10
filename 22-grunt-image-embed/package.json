@@ -1,7 +1,7 @@
 {
-  "name": "21-time-grunt",
+  "name": "22-grunt-image-embed",
   "version": "0.0.1",
-  "description": "Grunt plugin to display timing stats",
+  "description": "Grunt plugin to convert images into data URIs",
   "main": "Gruntfile.js",
   "repository": {
     "type": "git",
@@ -21,7 +21,7 @@
     "grunt-contrib-uglify": "^0.9.1",
     "grunt-filerev": "^2.3.1",
     "grunt-usemin": "^3.0.0",
-    "load-grunt-tasks": "^3.1.0",
-    "time-grunt": "^1.2.0"
+    "grunt-image-embed": "^0.3.3",
+    "load-grunt-tasks": "^3.1.0"
   }
 }

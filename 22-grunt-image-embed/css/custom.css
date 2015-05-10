@@ -1,0 +1,15 @@
+.m-t {
+	margin-top: 10px;
+}
+
+.grunt {
+	width: 128px;
+	height: 128px;
+	background: url('../images/grunt-logo.png') no-repeat;
+}
+
+.jquer {
+	width: 57px;
+	height: 57px;
+	background: url('http://jquer.in/favicons/apple-touch-icon-57x57.png') no-repeat;
+}

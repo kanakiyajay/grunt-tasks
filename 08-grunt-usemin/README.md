@@ -132,3 +132,9 @@ Above post will explain how you can still keep those pesky yet required console.
 Further 2: [How to use grunt-usmin with grunt-htmlmin](http://grunt-tasks.com/grunt-htmlmin/)
 
 Above post explains the steps to minify html, css and js files using the above plugins.
+
+Further 3: [Usage with time-grunt](http://grunt-tasks.com/time-grunt/)
+
+Further 4: [Usage with grunt-image-embed](http://grunt-tasks.com/grunt-image-embed/)
+
+Above post will explain how to replace your small image assets referenced in your css files by data-uris.
