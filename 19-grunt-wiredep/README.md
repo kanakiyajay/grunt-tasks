@@ -36,7 +36,8 @@ Here is your Gruntfile.js:
 ```js
 module.exports = function(grunt) {
 
-  require('load-grunt-tasks')(grunt);
+  grunt.loadNpmTasks('grunt-wiredep');
+  grunt.loadNpmTasks('grunt-contrib-watch');
 
   grunt.initConfig({
     wiredep: {
