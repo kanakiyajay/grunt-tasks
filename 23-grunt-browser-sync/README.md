@@ -58,7 +58,24 @@ Running "browserSync:bsFiles" (browserSync) task
 Now you can open up the same url in multiple browsers as well as visit 192.168.1.33:3000 from your smartphone.
 Once you change anything inside custom.css all the tabs will reload.
 BrowserSync also has the ability to sync scroll, form, refresh actions and also provides you with a control panel UI.
-![screenshot](/images/browsersync.jpg)
+![screenshot](https://raw.githubusercontent.com/kanakiyajay/grunt-tasks/master/23-grunt-browser-sync/images/browsersync.jpg)
+
+## External Server
+
+Many a times we will have an external server built on express / php / django / rails and we want to use BrowserSync and grunt with it.
+Sweat not! BrowserSync has this support built-in using its proxy featured.
+
+This is the only option that you need to change:
+
+```js
+options: {
+  proxy: 'localhost:80'
+}
+```
+
+You can even add port, logs watchOptions and middlewares.
+
+Here is the [full list](http://www.browsersync.io/docs/options/) of options.
 
 Found something wrong in the above article, send a pull request in the [github repo](http://github.com/kanakiyajay/grunt-tasks/23-grunt-browser-sync/) or notify in the comments below.
 I will also love to hear about your cool hacks around grunt-image-embed.
