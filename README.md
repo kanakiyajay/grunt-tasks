@@ -19,6 +19,8 @@ cd to that folder and run
 
 Following are the Blog posts that have been published
 
+- [Grunt Contrib Compress](http://grunt-tasks.com/grunt-contrib-compress/ "grunt contrib compress")
+- [Grunt Browser Sync](http://grunt-tasks.com/grunt-browser-sync/ "grunt browser sync")
 - [Grunt Image Embed](http://grunt-tasks.com/grunt-image-embed/ "image embed")
 - [time-grunt](http://grunt-tasks.com/time-grunt/ "time grunt")
 - [Grunt Contrib Htmlmin](http://grunt-tasks.com/grunt-htmlmin/ "grunt contrib htmlmin")

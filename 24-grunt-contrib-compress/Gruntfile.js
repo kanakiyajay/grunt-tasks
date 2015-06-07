@@ -8,10 +8,17 @@ module.exports = function(grunt) {
         options: {
           archive: 'project.zip'
         },
-        expand: true,
-        cwd: 'assets/',
-        src: ['**/*'],
-        dest: '/'
+        files: [{
+          cwd: 'assets/css/',
+          expand: true,
+          src: ['**/*'],
+          dest: 'styles'
+        }, {
+          cwd: 'assets/js/',
+          expand: true,
+          src: ['**/*'],
+          dest: 'scripts'
+        }]
       }
     }
   });
