@@ -3,8 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Grunt Purify CSS</title>
+	<!-- build:css css/styles.css -->
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/custom.css">
+	<!-- endbuild -->
 </head>
 <body>
 	<div class="container">
@@ -37,6 +39,7 @@
 			</div>
 		</div>
 	</div>
+	<!-- build:js js/script.js -->
 	<script src="js/jquery.js"></script>
 	<script>
 		$(document).ready(function() {
@@ -45,5 +48,6 @@
 			});
 		});
 	</script>
+	<!-- endbuild -->
 </body>
 </html>
