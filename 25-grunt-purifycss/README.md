@@ -66,5 +66,19 @@ File "dest/tmp.css" created.
 ```
 If you open up `dest/tmp.css` it will contain css classes used by index.html and all the bloated css code from bootstrap has been removed.
 
+## CSS in Javascript
+
+Grunt-purifycss also handles css classes injected using javascript and supports angular templates, React and most of the popular frameworks.
+
+Heres a simple example:
+```js
+$(document).ready(function() {
+  $('.m-t').on('click', function() {
+    $(this).addClass('m-2t');
+  });
+});
+```
+If you run grunt over here, the tmp.css file that is generated will also contain .m-2t, [purifycss](https://github.com/purifycss/purifycss) works with all javascript frameworks.
+
 Found something wrong in the above article, send a pull request in the [github repo](http://github.com/kanakiyajay/grunt-tasks/25-grunt-purifycss/) or notify in the comments below.
 I will also love to hear about your usage of grunt-contrib-compress in your projects.
