@@ -1,0 +1,29 @@
+{
+  "name": "26-grunt-open",
+  "version": "0.0.1",
+  "description": "Opens Urls and files from a grunt task",
+  "main": "Gruntfile.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kanakiyajay/grunt-tasks.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jay Kanakiya",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-copy": "^0.8.0",
+    "grunt-contrib-cssmin": "^0.12.3",
+    "grunt-contrib-htmlmin": "^0.4.0",
+    "grunt-contrib-uglify": "^0.9.1",
+    "grunt-filerev": "^2.3.1",
+    "grunt-open": "^0.2.3",
+    "grunt-purifycss": "^0.1.0",
+    "grunt-usemin": "^3.0.0",
+    "load-grunt-tasks": "^3.1.0"
+  }
+}
