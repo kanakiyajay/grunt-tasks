@@ -150,6 +150,35 @@ Minified 1 files
 Done, without errors.
 ```
 
+From the comments:
+
+It might become cumbersome to specify multiple html files for compressing,
+Here's the way to automatically do that. Because grunt-contrib-htmlmin doesn't support replacing [issue], we first copy it to `.tmp` and from there to `dist/`
+
+Inside htmlmin task:
+```js
+files: [{
+  expand: true,
+  cwd: 'dist/',
+  src: ['*.html'],
+  dest: '.tmp/'
+}]
+```
+
+Inside copy task
+```js
+html: {
+  files: [{
+    expand: true,
+    cwd: '.tmp',
+    src: ['*.html'],
+    dest: 'dist/'
+  }]
+}
+```
+
+You will also have to append `copy:html` as a task in your default task list.
+
 Now, the index.html in dist/ folder will contain no whitespaces and comments.
 Heres the link to the [gist](https://gist.github.com/kanakiyajay/e7117037ae1d1f820947) for Gruntfile.js and package.json
 

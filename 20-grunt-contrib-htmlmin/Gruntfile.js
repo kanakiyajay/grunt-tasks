@@ -7,6 +7,14 @@ module.exports = function(grunt) {
       generated: {
         src: 'index.html',
         dest: 'dist/index.html'
+      },
+      html: {
+        files: [{
+          expand: true,
+          cwd: '.tmp',
+          src: ['*.html'],
+          dest: 'dist/'
+        }]
       }
     },
     filerev: {
@@ -42,9 +50,12 @@ module.exports = function(grunt) {
           removeComments: true,
           collapseWhitespace: true
         },
-        files: {
-          'dist/index.html': 'dist/index.html'
-        }
+        files: [{
+          expand: true,
+          cwd: 'dist/',
+          src: ['*.html'],
+          dest: '.tmp/'
+        }]
       }
     }
   });
@@ -57,6 +68,7 @@ module.exports = function(grunt) {
       'cssmin',
       'filerev',
       'usemin',
-      'htmlmin'
+      'htmlmin',
+      'copy:html'
   ]);
 };
