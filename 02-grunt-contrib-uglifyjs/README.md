@@ -6,7 +6,7 @@ From the command line:
 
 ## Simple Configuration
 
-`npm install grunt grunt-contrib-uglifyjs --save-dev`
+`npm install grunt grunt-contrib-uglify --save-dev`
 
 This will install grunt as well uglifyjs in your node_modules devDependencies as well as update package.json
 
